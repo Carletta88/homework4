@@ -3,7 +3,7 @@ var timerEl = document.querySelector("#timer")
 var instructions = document.querySelector(".instructions")
 var startButton = document.querySelector(".start-button")
 var index = 0;
-var correct = 0,
+var correct = 0;
 var questions = [
     {
         question: 'Commonly used Data Types do not include:',
@@ -11,7 +11,7 @@ var questions = [
         B: 'Booleans',
         C: 'Alerts',
         D: 'Numbers',
-        Answer: "C"
+        Answer: 'Alerts'
     },
     {
         question: 'The condition in an if/else statement is enclosed within _______.',
@@ -19,7 +19,7 @@ var questions = [
         B: 'Curly Brackets',
         C: 'Parenthesis',
         D: 'Square Brackets',
-        Answer: 'C'
+        Answer: 'Parenthesis'
     },
     {
         question: 'Arrays in JavaScript can be used to store _____.',
@@ -27,7 +27,7 @@ var questions = [
         B: 'Other Arrays',
         C: 'Booleans',
         D: 'All the above',
-        Answer: 'D'
+        Answer: 'All the above'
     },
     {
         question: 'String values must be enclosed within _______',
@@ -35,7 +35,7 @@ var questions = [
         B: 'Curly Brackets',
         C: 'Quotes',
         D: 'Parenthesis',
-        Answer: 'C'
+        Answer: 'Quotes'
     },
     {
         question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
@@ -43,7 +43,7 @@ var questions = [
         B: 'Terminal/bash',
         C: 'For loops',
         D: 'Console.log',
-        Answer: 'D'
+        Answer: 'Console.log'
         
     },
     
@@ -122,18 +122,17 @@ function displayQuestion(questionIndex)
         })
     }
 
-    function checkAnswers() {
-        if (A == Answer) {
-            correct++;
-        }
-    }
+    
 }
  
+function checkAnswer() {
 
+
+}
     
 
 
-
+// When the user clicks on the element display the element that is clicked on, we want to be able to return the text from a element after clicking on it. Call the function inside the display function.
 
 // THEN a timer starts and I am presented with a question -DONE
 // WHEN I answer a question
