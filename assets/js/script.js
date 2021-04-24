@@ -1,9 +1,13 @@
 var scores = document.querySelector("#scores")
 var timerEl = document.querySelector("#timer")
 var instructions = document.querySelector(".instructions")
+var data = document.querySelector('#data')
+var quiz = document.querySelector('.class')
 var startButton = document.querySelector(".start-button")
+var results = document.querySelector('.results')
 var index = 0;
 var correct = 0;
+var choice = 0;
 var questions = [
     {
         question: 'Commonly used Data Types do not include:',
@@ -48,11 +52,7 @@ var questions = [
     },
     
 ]
-
-// GIVEN I am taking a code quiz
-// WHEN I click the start button
-// start the timer
-// call the function that displays the question 
+ 
 function runGame() {
     document.querySelector(".start-button").style.visibility = "hidden";
     
@@ -87,6 +87,8 @@ startButton.addEventListener("click", startTimer);
 
 function displayQuestion(questionIndex)
 {
+    // checkAnswer();
+
     var title = document.createElement("h1")
     title.textContent = questions[questionIndex].question
 
@@ -125,10 +127,15 @@ function displayQuestion(questionIndex)
     
 }
  
-function checkAnswer() {
+function checkAnswer(){
+    displayQuestion();
 
-
-}
+    if(choice == questions[questionIndex].question.answer){
+      correct++;
+    }
+    
+  }
+    
     
 
 
