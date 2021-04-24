@@ -13,9 +13,26 @@ header {
 h1 {
     margin-top: 20px;
 }
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background: none;
+}
+
 #scores {
     float: left;
     font-size: 20px;
+}
+
+.options {
+    margin: 50px;
 }
 
 #timer {

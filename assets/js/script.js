@@ -89,13 +89,13 @@ function displayQuestion(questionIndex)
 {
     // checkAnswer();
 
-    var title = document.createElement("h1")
+    var title = document.createElement("h3")
     title.textContent = questions[questionIndex].question
 
     var A = document.createElement("button");
     A.classList.add("options");
     A.textContent = questions[questionIndex].A;
-
+    
     var B = document.createElement("button");
     B.classList.add("options");
     B.textContent = questions[questionIndex].B;
@@ -124,17 +124,21 @@ function displayQuestion(questionIndex)
         })
     }
 
-    
 }
- 
-function checkAnswer(){
-    displayQuestion();
 
-    if(choice == questions[questionIndex].question.answer){
-      correct++;
-    }
+// function checkAnswer(choice){
+    //     var allButtons = document.getElementsByClassName("options");
+    //     if(choice == questions[questionIndex].question.answer){
+        //         correct++;
+        //         console.log("RIght")
+        //     }
+        
+        // }
+        
+        // allButtons.addEventListener('click', checkAnswer);
+
+
     
-  }
     
     
 
