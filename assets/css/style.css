@@ -65,4 +65,8 @@ button {
     margin-bottom: 20px;
     
 }
+
+.results {
+    visibility: hidden;
+}
     

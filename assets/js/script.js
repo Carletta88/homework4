@@ -6,7 +6,7 @@ var quiz = document.querySelector('.class')
 var startButton = document.querySelector(".start-button")
 var results = document.querySelector('.results')
 var index = 0;
-let userAnswers = new Array(5);
+var userAnswers = [];
 var correctAnswers = ["C", "C", "D", "C", "D"];
 var questions = [
     {
@@ -133,12 +133,33 @@ function displayQuestion(questionIndex)
 function checkAnswers() {
     for (var i = 0; i < correctAnswers.length; i++) {
         if (userAnswers[i] === correctAnswers[i]) {
-              correct++;
+            correct++;
         }
     }
- }
+}
 
- checkAnswers();
+checkAnswers();
+
+// function renderResults() {
+//     var userAnswers = localStorage.SetItem(new Array(5));
+    
+  
+//     if (userAnswers === correctAnswers) {
+//       return;
+//     }
+  
+//     results.textContent = userAnswers;
+    
+//   }
+
+  
+
+
+
+// function displayAnswers() {
+//     document.querySelector(".results").style.visibility = "visible";
+// }
+// displayAnswers();
 
 
 
