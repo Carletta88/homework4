@@ -80,6 +80,7 @@ function startTimer() {
         }
       }, 1000);
 }
+
 startButton.addEventListener("click", startTimer);      
             
            
@@ -140,34 +141,3 @@ function checkAnswers() {
 
 checkAnswers();
 
-// function renderResults() {
-//     var userAnswers = localStorage.SetItem(new Array(5));
-    
-  
-//     if (userAnswers === correctAnswers) {
-//       return;
-//     }
-  
-//     results.textContent = userAnswers;
-    
-//   }
-
-  
-
-
-
-// function displayAnswers() {
-//     document.querySelector(".results").style.visibility = "visible";
-// }
-// displayAnswers();
-
-
-
-// Slide 7
-// All done!
-// Your final score is ___.
-// Enter initials: _____             Submit Button
-// Slide 8
- 
-// Highscores list
-// Go back button                 Clear Highscores button
